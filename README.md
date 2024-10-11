@@ -1,6 +1,6 @@
 # RABIT dRep repository
 This repo contains information about RABIT as a Cardano Delegated Representative (dRep).\
-It also contains contextual information (if any) provided during governance votes.\
+It also contains contextual information (if any) provided during governance votes.
 
 ### Disclaimer:
 The information contained herein does not constitute investment advice.\
