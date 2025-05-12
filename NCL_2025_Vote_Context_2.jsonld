@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "As stated in the metadata added to a previous NCL gov action, I will support a percentage-based NCL, rather than a fixed-amount one. Regardless of my personal opinions, the current NCL setting process is unnecessarily convoluted: we have now seen 4 proposals around the exact same topic.\n\nPercentage-based NCLs would be simpler and more flexible, especially if set conservatively low. This change would make last-minute adjustments (such as the ones we are currently seeing) unnecessary, as well as ensure that budgeting is always up to date with treasury inflow and outflow. A smaller treasury would necessarily and automatically result in smaller budgets for the period of interest (because they would be percentage based). \n\nFurther, I disagree with having to change NCLs on the fly just because some projects might go over the calendar year, or because approval of the NCL has been delayed (for whatever reason). If projects budget over a longer period of time (eg they have a five-year plan), they should do so with the NCLs in mind, over multiple years, and do so conservatively. They should then compete for year-to-year funding within the constraints of the yearly NCL. For these reasons NCLs should be set for specific financial years in my view.\n\nThe latter would also assist projects in their tax reporting, which is done yearly regardless of the long-term budgeting for a specific development. \n\nThese are just my opinions and are not meant to be prescriptive in any way, but aim to provide context to my votes on NCLs for interested stakeholders. Respectfully, RABIT.   "
+  },
+  "hashAlgorithm": "blake2b-256"
+}
